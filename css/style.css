@@ -1,7 +1,108 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 20px;
+}
+#main,
+#title,
+#subtitle,
+#tribute-info,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background: #ebebeb;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#title {
+  /*background: coral;*/
+  line-height: 1;
+  font-size: 3rem;
+  height: 6rem;
+  margin-top: 20px;
+}
+
+#subtitle {
+  /*background: cornflowerblue;*/
+  font-size: 1.1em;
+  font-weight: 100;
+  height: 3rem;
+  line-height: 2;
+}
+
 #img-div {
-    width: 400px;
+  background: white;
+  width: calc(100%);
+  height: 50vw;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 #image {
-    max-width: 70%;
+  max-width: 100%;
+}
+
+#img-caption {
+  /*background: chartreuse;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tribute-info {
+  /*background: darkmagenta;*/
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  max-width: 70%;
+}
+
+#tribute-info .title {
+  /*background: darkblue;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  height: 4rem;
+}
+
+#tribute-info > p {
+  display: flex;
+  background: cyan;
+  width: 100%;
+  height: 100%;
+}
+
+ul li {
+  display: block;
+  /*background: cornsilk;*/
+  margin: 10px;
+  padding: 10px;
+}
+
+.footer {
+  height: 5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+#tribute-link {
+  color: rgb(1, 184, 184);
 }
