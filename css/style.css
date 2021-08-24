@@ -46,15 +46,18 @@ body {
 
 #img-div {
   background: white;
-  width: calc(100%);
-  height: 50vw;
+  width: minmax(min-content, 100%);
+  height: min-content;
   padding: 10px;
   border-radius: 10px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  /*display: grid;
+  grid-template-rows: 1fr max-content;*/
 }
 
 #image {
+  margin: 0 auto;
   max-width: 100%;
 }
 
